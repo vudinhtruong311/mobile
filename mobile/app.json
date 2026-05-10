@@ -1,0 +1,31 @@
+{
+  "expo": {
+    "name": "BiblioSphere",
+    "slug": "bibliosphere-mobile",
+    "version": "1.0.0",
+    "scheme": "bibliosphere",
+    "userInterfaceStyle": "dark",
+    "orientation": "portrait",
+    "splash": {
+      "backgroundColor": "#0a0f1e"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "vn.edu.bibliosphere"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#0a0f1e"
+      },
+      "package": "vn.edu.bibliosphere"
+    },
+    "plugins": [
+      "expo-router",
+      "expo-secure-store",
+      "expo-asset"
+    ]
+  }
+}
