@@ -7,7 +7,7 @@ const TABS = [
   { name:'index',   title:'Tổng quan', icon:'🏠' },
   { name:'books',   title:'Sách',      icon:'📚' },
   { name:'members', title:'Bạn đọc',   icon:'👥' },
-  { name:'borrows', title:'Mượn/Trả',  icon:'🔄' },
+  { name:'borrows', name:'borrows', title:'Mượn/Trả',  icon:'🔄' },
   { name:'reports', title:'Báo cáo',   icon:'📊' },
 ];
 

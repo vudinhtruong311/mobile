@@ -4,6 +4,7 @@
     "slug": "bibliosphere-mobile",
     "version": "1.0.0",
     "scheme": "bibliosphere",
+    "sdkVersion": "54.0.0",
     "userInterfaceStyle": "dark",
     "orientation": "portrait",
     "splash": {
@@ -25,7 +26,8 @@
     "plugins": [
       "expo-router",
       "expo-secure-store",
-      "expo-asset"
+      "expo-asset",
+      "expo-font"
     ]
   }
 }

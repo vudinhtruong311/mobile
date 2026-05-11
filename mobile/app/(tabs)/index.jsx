@@ -1,6 +1,6 @@
 // mobile/app/(tabs)/index.jsx
 import { useState, useCallback } from 'react';
-import { View, Text, ScrollView, StyleSheet, RefreshControl, TouchableOpacity } from 'react-native';
+import { View, Text, ScrollView, StyleSheet, RefreshControl, TouchableOpacity, Alert, Platform } from 'react-native';
 import { useFocusEffect, router } from 'expo-router';
 import { LinearGradient } from 'expo-linear-gradient';
 import { reportsAPI } from '../../services/api';
@@ -41,7 +41,20 @@ export default function DashboardScreen() {
           <Text style={s.userName}>{user?.full_name || user?.username}</Text>
           <Text style={s.userRole}>{user?.role === 'admin' ? '🛡️ Quản trị viên' : '👤 Nhân viên'}</Text>
         </View>
-        <TouchableOpacity onPress={logout} style={s.logoutBtn}>
+        <TouchableOpacity
+          onPress={() => {
+            if (Platform.OS === 'web') {
+              if (window.confirm('Bạn có chắc muốn đăng xuất?')) {
+                logout().then(() => { window.location.href = '/auth/login'; });
+              }
+            } else {
+              Alert.alert('Đăng xuất', 'Bạn có chắc muốn đăng xuất?', [
+                { text: 'Hủy', style: 'cancel' },
+                { text: 'Đăng xuất', style: 'destructive', onPress: logout }
+              ]);
+            }
+          }}
+          style={s.logoutBtn}>
           <Text style={s.logoutTxt}>Đăng xuất</Text>
         </TouchableOpacity>
       </LinearGradient>

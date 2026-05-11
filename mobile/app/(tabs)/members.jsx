@@ -6,7 +6,7 @@ import { membersAPI } from '../../services/api';
 import { Card, Btn, Input, Badge, Empty, Loading, ConfirmModal } from '../../components/UI';
 import { colors } from '../../constants/theme';
 
-const TYPES = ['Tất cả','Sinh viên','Giảng viên','Cán bộ'];
+const TYPES = ['Tất cả','Sinh vien','Giang vien','Can bo'];
 
 export default function MembersScreen() {
   const [members, setMembers]   = useState([]);

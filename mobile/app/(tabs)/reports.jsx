@@ -46,7 +46,7 @@ export default function ReportsScreen() {
               <Text style={s.fineLbl}>Đã thu</Text>
               <Text style={[s.fineVal,{color:colors.green}]}>{Number(dashboard?.total_fine_collected||0).toLocaleString('vi-VN')}đ</Text>
             </View>
-            <View style={[s.fineItem,{borderLeftWidth:1,borderLeftColor:colors.border}]}>
+            <View style={[s.fineItem,{borderLeftWidth:1,borderLeftColor:colors.border}]}> 
               <Text style={s.fineLbl}>Chưa thu</Text>
               <Text style={[s.fineVal,{color:colors.red}]}>{Number(dashboard?.uncollected_fine||0).toLocaleString('vi-VN')}đ</Text>
             </View>

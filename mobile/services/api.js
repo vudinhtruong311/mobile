@@ -5,7 +5,7 @@ import AsyncStorage from '@react-native-async-storage/async-storage';
 // Android emulator : http://10.0.2.2:8000
 // iOS Simulator    : http://localhost:8000
 // Điện thoại thật  : http://192.168.x.x:8000  (ipconfig để tìm IP)
-export const API_BASE = 'http://localhost:8000';
+export const API_BASE = 'http://192.168.1.227:8000';
 
 const TOKEN_KEY = 'bibliosphere_token';
 
