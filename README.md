@@ -142,4 +142,4 @@ Backend cũng cần chạy với `--host 0.0.0.0` (đã có sẵn trong code).
 ![Màn hình Báo cáo](<ảnh/report.jpg>)
 
 ## Link video demo
-https://drive.google.com/drive/home
+https://drive.google.com/file/d/1iF2pQHK3TKHLRpU5Rsy92ll4zeB2wCVX/view?usp=drive_link
